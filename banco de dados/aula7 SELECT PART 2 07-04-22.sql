@@ -100,7 +100,7 @@ select nome,max(peso) from alunos
 where peso= (select max(peso) from alunos);			/* vai me retorna o nome e o peso do aluno mais pesado */
 
 select nome,min(peso) from alunos 				
-where peso= (select min(peso) from alunos);
+where peso= (select min(peso) from alunos);			/* vai me retorna o nome e o peso do aluno mais leve */
 
 select * from alunos
 order by peso;
