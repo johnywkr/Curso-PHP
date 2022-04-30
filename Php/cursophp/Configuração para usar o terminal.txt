@@ -1,13 +1,13 @@
 
   - Configuração para usar o terminal !
 
-  Entre no link : https://windows.php.net/download#php-7.4
+     Entre no link : https://windows.php.net/download#php-7.4
 
-  Baixe a versão zip do => PHP 7.4 (7.4.29)
+     Baixe a versão zip do => PHP 7.4 (7.4.29)
 
-	VC15 x64 Non Thread Safe (2022-Apr-14 21:34:21)
-	Zip [24.92MB]
-	sha256: fd958c064e1ed18efe76298bb4606ab1abaca8400516f232b3e98ecbb3da6bc5
+	   VC15 x64 Non Thread Safe (2022-Apr-14 21:34:21)
+    	Zip [24.92MB]
+    	sha256: fd958c064e1ed18efe76298bb4606ab1abaca8400516f232b3e98ecbb3da6bc5
 
   - Depois copie o caminho da pasta , entre na variavel de sistemas , add o caminho e teste dentro do prompt  de comando,
     com o comando php -v . vai aparecer a versao e os detalhes se correr tudo certo.

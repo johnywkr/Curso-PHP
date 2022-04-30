@@ -1,0 +1,162 @@
+		Laços em PHP: While
+
+  O while significa que deve executar o código dentro dos parênteses até que a condição seja satisfeita.
+  O while é composto da palavra while, seguido de abertura de parêntese, uma condição e fechamento de parêntese, 
+  o que vier abaixo é o código que será repetido até que a condição seja satisfeita. Veja o exemplo abaixo:
+
+ $contador = 0;
+ while($contador < 10)
+ {
+ echo "O contador agora e: " . $contador . " ";
+ $contador++;
+ }
+
+ /*Resultado:
+ O contador agora e: 0
+ O contador agora e: 1
+ O contador agora e: 2
+ O contador agora e: 3
+ O contador agora e: 4
+ O contador agora e: 5
+ O contador agora e: 6
+ O contador agora e: 7
+ O contador agora e: 8
+ O contador agora e: 9
+ */
+ ?>
+
+Temos a palavra while, a abertura de parêntese, a condição nossa que é a variável $contador ser menor que 10, fechamento de parêntese, abertura de chave,
+ e é este código que será repetido até que $contador seja menor que 10, e fechamento de chave.
+
+O código echo é para ilustrar o avanço do contador. Já a linha $contador++; significa que estamos incrementando o contador,
+ ou seja, somando 1 a cada vez que o laço fecha o ciclo.
+
+Em palavras mais fáceis de compreender o código faz:
+
+Contador = 0;
+Enquanto o contador for menor que 10 faz:
+Escreve a mensagem na tela com o valor atualizado do contador;
+Incrementa o contador;
+Verifica novamente se o contador é menor que 10:
+Sim, então percorre o laço novamente;
+Não, então termina o código.
+Este laço vai correr 10 vezes o código entre chaves, começando a mostrar que o contador inicial é 0 e percorrendo até o 9.
+ Por que o contador não foi até o 10? Por que nosso laço esta verificando e correndo o código enquanto o $contador for menor que 10.
+
+Como correr até o número 10?
+Para percorrer até o número 10, você deve fazer a condição, <= (menor ou igual), conforme exemplo abaixo:
+
+	while($contador <= 10)
+...
+//outro exemplo
+$contador = 5;
+while($contador > 0)
+{
+echo "O contador agora e: " . $contador . "
+";
+$contador--;
+}
+
+//mais um
+$contador = 5;
+while($contador >= 0)
+{
+echo "O contador agora e: " . $contador . "
+";
+$contador--;
+}
+?>
+
+No primeiro exemplo, fiz com que o contador fosse até o número 10, então, começando em 0 ele vai percorrer 11 vezes o laço.
+
+No segundo exemplo, fiz o contrário do primeiro, temos um valor no contador = 5, e vamos correr o laço até que este contador seja > 0 (maior que zero).
+ Ou seja, do 5 até o 1. E ao invés de eu incrementar o contador, eu decrementei ele, ou seja, diminuí um valor a cada passagem pelo laço.
+
+No terceiro exemplo o teste é feito até que seja maior ou igual a 0, ou seja, vai percorrer do 5 até o 0, serão 6 vezes no laço.
+
+RESUMO:
+++ = incrementa um valor no contador
+-- = decrementa um valor no contador
+
+Laços em PHP: Do while
+Muito similar ao while, porém com uma única diferença. Ao invés de primeiro testar a condição, o PHP vai primeiro passar pelo laço para depois testar a condição.
+ A sintaxe está abaixo:
+
+$contador = 10;
+do
+{
+echo "O contador agora e: " . $contador . "
+";
+$contador--;
+}
+while($contador > 0)
+/*
+RESULTADO:
+O contador agora e: 10
+O contador agora e: 9
+O contador agora e: 8
+O contador agora e: 7
+O contador agora e: 6
+O contador agora e: 5
+O contador agora e: 4
+O contador agora e: 3
+O contador agora e: 2
+
+O contador agora e: 1
+*/
+?>
+
+O laço vai sempre entrar na primeira vez para depois fazer a comparação da condição. Ou seja, o DO WHILE, sempre executa pela primeira vez,
+ independente da condição ser verdadeira, veja o que estou falando no exemplo abaixo:
+
+$contador = 0;
+do
+{
+echo "O contador agora e: " . $contador . "
+";
+$contador--;
+}
+while($contador > 0)
+/*
+RESULTADO:
+O contador agora e: 0
+*/
+?>
+
+Como pode ver, o contador mesmo sendo 0 entrou no laço, pois ele vai testar somente no final. Esta é a diferença entre o WHILE e o DO WHILE.
+
+Laços do PHP: FOR
+O laço FOR em PHP é muito usado quando você sabe de onde até onde quer ir. A sintaxe do FOR pode ser vista abaixo:
+
+for($contador = 0; $contador < 10; $contador++)
+{
+echo "O contador agora e: " . $contador . "
+";
+}
+/*
+RESULTADO
+O contador agora e: 0
+O contador agora e: 1
+O contador agora e: 2
+O contador agora e: 3
+O contador agora e: 4
+O contador agora e: 5
+O contador agora e: 6
+O contador agora e: 7
+O contador agora e: 8
+O contador agora e: 9
+*/
+?>
+
+Lendo o comando FOR:
+
+Faça:
+Contador começa em 0;
+Enquanto o contador for menor que 10;
+Incrementa o contador;
+Executa os comandos necessários dentro do laço;
+
+
+No for, iniciamos setando nossa variável pelo valor inicial, seguido de um ponto-e-vírgula, depois definimos a nossa condição (no exemplo
+, o contador deveria ser menor que zero para satisfazer a condição), seguido de outro ponto-e-vírgula,
+ e a terceira parte é onde incrementamos o valor do contador do laço. Para só então começarmos a entrar nos códigos que devem ser executados repetidamente.
