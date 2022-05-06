@@ -1,0 +1,10 @@
+
+!! EXTENÇOES VSCOLD !!
+
+ = php debug
+ = intelephence
+ = php serve
+ = color highlight
+ = bracket pair
+ = guides
+ = PHP Getters & Setters

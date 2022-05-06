@@ -1,0 +1,63 @@
+   === ANOTACOES SOBRE CADA COMANDO DESSA AULA ===
+
+   - Sempre que eu for chamar um atributo ou metodo dentro da classe eu uso o $this.
+     $this quer dizer "dessa".  
+
+   - O this vai dizer que o tributo 'tampada' é da class ''caneta', usado no exemplo em questao.  
+	
+   - print_r($c1); vai mostrar o que ta dentro da variavel.
+
+
+
+   PARAMETRO
+
+  - O paramentro é uma variavel que só vai ser utilizado dentro da funcao,
+    não ira interferir nas variaveis de fora.
+
+  Exemplo abaixo: O paramentro ($valorSaldo)
+
+         function setSaldo($valorSaldo){
+
+        }
+
+
+  Exemplo 2 :   - Nesse exemplo abaixo o paramentro '$valorSaldo' passado sera recebido pelo metodo 'saldo' .
+
+           function setSaldo($valorSaldo){         
+              $this -> saldo = $valorSaldo;
+           }
+           
+
+  
+    VISIBILIDADE DOS ATRIBUTOS
+  
+  - Exitem 3 tipos de visibilidade:
+
+    public -> Qualquer um pode alterar.
+    private -> Somente pode ser alterado dentro da propria classe.
+    Protected -> Apenas a mae e suas filhas podem acessar.
+
+
+   METODOS ESPECIAIS
+
+  - get -> pegar
+  - set -> enviar OU atribuir
+
+
+  Todo atributo que eu criar tem que ter o metodo acessor dele
+
+    Exemplo: Atributos da conta abaixo é o private $titular
+            
+            class Conta{            
+               public $titular;
+
+    Metodo acessor: O metodo acessor é o getTitular() e o setTitular()
+
+            function getTitular(){
+               return $this->titular;
+            }
+    
+           function setTitular($t){
+              $this->titular = $t;
+           }
+
