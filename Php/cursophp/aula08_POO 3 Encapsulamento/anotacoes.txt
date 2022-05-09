@@ -1,0 +1,12 @@
+
+
+	Pilares da POO
+
+  Para lembra quais os pilares da orientação objecto basta lembrar da frase -> É HP
+
+
+     É -> Encapsulamento : Algo que é encapsulado, dentro de uma capsula .. 
+     H -> Herança : Vem de herdar algo .. 
+     P -> Poliformismo : Varias formas de se fazer a mesma coisa ..
+
+    
