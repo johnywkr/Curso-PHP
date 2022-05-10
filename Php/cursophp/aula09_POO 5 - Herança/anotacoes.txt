@@ -1,0 +1,19 @@
+  Conteudo sobre = HERANÇA =  
+
+  Abstract class -> eu nao vou poder instaciar um objecto atraves da classe pessoa, ela vai servir so pra ser herdada por outras classes.
+
+  Protected -> so essa classe e quem esta herdando conseguem utilizar os atributos protegidos.
+
+
+ COMANDOS E PARA QUE SERVEM...
+
+  // get retorna.
+  // O getnome só vai retornar o nome, que ja esta no protected $nome.
+
+  // set altera e envia um novo nome.
+  // O setNome vai alterar o nome , enviar um novo nome para o protected $nome.
+
+
+  class Aluno extends Pessoa{}
+
+  //Minha class 'Aluno esta herdando todos os atributos da class 'Pessoa' atraves do extendes.
