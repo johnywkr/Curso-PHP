@@ -18,7 +18,7 @@
 
 
 
-        function posicaoJogador($posicao){
-            echo "A possicao do jogador é $posicao";
+        function posicaoJogador(){
+            echo "A possicao do jogador é " ;
         }
     }
