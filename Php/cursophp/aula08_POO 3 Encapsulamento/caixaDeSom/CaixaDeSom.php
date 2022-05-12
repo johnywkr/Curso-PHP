@@ -1,6 +1,9 @@
 
 
 <?php 
+// Aqui na class é aonde sera implementado a interface ...
+// Atraves do ' implements ' chamando o ' controlador ' , que foi o nome dado para interface..
+
 require_once 'interface.php';
 class CaixaDeSom implements Controlador{
     // Atributos da caixa de som
@@ -23,36 +26,24 @@ class CaixaDeSom implements Controlador{
     private function getvolume(){
         return $this->volume;
     }
-
     private function setVolume($volume){
         $this->volume = $volume;
     }
 
 
-    private function getLigado()
-    {
+    private function getLigado(){
         return $this->ligado;
     }
-
- 
-    private function setLigado($ligado)
-    {
+     private function setLigado($ligado){
         $this->ligado = $ligado;
-
-        return $this;
     }
 
-    private function getTocando()
-    {
+
+    private function getTocando(){
         return $this->tocando;
     }
-
-
-    private function setTocando($tocando)
-    {
+    private function setTocando($tocando){
         $this->tocando = $tocando;
-
-        return $this;
     }
 
 
