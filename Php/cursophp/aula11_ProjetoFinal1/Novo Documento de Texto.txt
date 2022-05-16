@@ -1,0 +1,25 @@
+
+
+	CRUD
+
+ Create -
+ Read -
+ Update - 
+ Delete -
+
+  MVC
+  Vamos desenvolver nosso sistema na arquitetura MVC.
+
+  M - Model -> conexao com o banco de dados.
+  V - View ->  é o que o usuario vai ver, no caso o front end .
+  C - Controle ->  é o que faz a intermediação do view com o model.
+
+
+
+  action=" "
+  é pra onde os dados serao enviados.
+
+
+  1º Foi criado o formulario que vai ser mandado la pro controller pelo metodo post.
+  2º Foi criado o cliente controller , para receber todos os dados passado pelo formulario.
+  3º Vou pegar os valores e enviar la para o clienteDTO
