@@ -23,7 +23,7 @@ $ok = $clienteDAO->cadastrarCliente($clienteDTO);
 
 if ($ok) {
     echo "<script> alert('Cadastrado com sucesso!') 
-        window.location = '../view/index.html'
+        window.location = '../view/listaCliente.php'
     </script>";
 }
 
