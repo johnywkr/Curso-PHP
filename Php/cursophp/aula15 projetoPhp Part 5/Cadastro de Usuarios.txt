@@ -1,0 +1,48 @@
+	CADASTRO DE USUARIOS
+
+2º Primeiro , foi feito o formulario e seus campos inputs .
+
+
+3º Depois o controller que vai ter suas variaveis para recuperar os valores pelo metodo POST.
+	ex: cpf , nome, email ..
+
+
+4º Criar uma class funcionarioDTO, contendo as variaveis de todos os funcionarios
+   E crias os Get e Sets de cada variavel.
+
+ Os métodos gets sempre retornam algo e o métodos sets sempre manipulam o atributo e insere valor dentro deles,
+ por isso, tais métodos recebem parâmetros que serão alocados aos atributos. Por fim, tais métodos são uma forma de
+ acessar ou manipular os atributos que não são públicos.
+
+
+5º Criar um class funcionarioDAO , e fazer a ligação com o banco de dados pelo require_once
+   - criar um : function cadastrarFuncionario(funcionarioDTO $funcionarioDTO) 
+
+   //Essa function ira receber todos meus metodos da class funcionarioDTO, e armazenar numa variavel $funcionarioDTO .
+
+   - inserimos o conteudo da função -> function cadastrarFuncionario(funcionarioDTO $funcionarioDTO)
+
+   - criamos a conexao com meu Banco de dados ->  $banco = new Conexao();                                                                         
+                				  $conexao = $banco->getConexao();
+
+
+   - Prepara um codigo para receber valores, as 3 interrogaçoes sao valores do metodo prepare.
+
+	 $sql = $conexao->prepare("insert into usuario value(?,?,?)");                                   
+ 
+   - Para pegar esses valores, usamos o bind_param que vai inserir valores nessas interrogações    
+   - A primeira ? vai ser uma string a segunda outra string e a terceira um inteiro , sendo assim ('ssi'). 
+	
+	 $sql->bind_param('ssi',$usuario,$senha,$perfil);    
+         
+   - O 'execute' vai executar o 'prepare' e em seguida, inserir os dados la na tabela usuario.  
+         $sql->execute();
+
+
+4º Depois de terminar 'funcionario.DAO' voltamos para cadastrarFuncionario em controller
+
+   - criamos o -> $funcionarioDTO = new funcionarioDTO();
+     e colocamos os set'eres de cada variavel.
+
+   - depois $funcionarioDAO = new funcionarioDAO(); e um teste om if e else.
+
