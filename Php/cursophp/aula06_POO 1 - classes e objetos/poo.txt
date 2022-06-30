@@ -1,0 +1,12 @@
+  
+  - ENTENDENDO CLASS E OBJETO -   
+
+- Um objeto só vai ser chamado se houver uma classe para instanciar esse objeto.  
+  
+  A instanciação é um processo por meio do qual se realiza a cópia de um objeto (classe) existente. Uma classe, a qual tem a função de determinar um tipo de dado,
+  deve ser instanciada para que possamos utilizá-la.
+
+
+  Exemplo: A claass seria um molde , e o objeto um copia desse molde.
+	   Para criar uma caneta precisariamos de um projeto ou modelo , e outras canetas viriam a parir desse modelo. O modelo seria a class e as outras canetas o
+	   objeto a parti do modelo .
