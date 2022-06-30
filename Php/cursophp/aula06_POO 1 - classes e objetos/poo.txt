@@ -1,5 +1,5 @@
   
-  - ENTENDENDO CLASS E OBJETO -   
+  * ENTENDENDO CLASS E OBJETO *   
 
 - Um objeto só vai ser chamado se houver uma classe para instanciar esse objeto.  
   
@@ -7,6 +7,17 @@
   deve ser instanciada para que possamos utilizá-la.
 
 
-  Exemplo: A claass seria um molde , e o objeto um copia desse molde.
+  Exemplo: A class seria um molde , e o objeto um copia desse molde.
 	   Para criar uma caneta precisariamos de um projeto ou modelo , e outras canetas viriam a parir desse modelo. O modelo seria a class e as outras canetas o
 	   objeto a parti do modelo .
+
+  Obs: Sempre que for criar um arquivo class , comesse com a letra maiuscular como boa pratica.
+
+
+ * CARACTERISTICAS=>atributos E COMPORTAMENTOS=>metodos DA CLASS *
+
+ - Dentro da class serao criadas suas caracteristicas que na programação são chamadas de atributos.
+	ex : atributos da minha (class caneta).
+
+ - Tambem dentro da class teremos os comportamentos que na programacao são chamados de metodos, que são as funçoes ou FUNCTIONS.
+        ex : essa minha função pode tampar ou destampar minha caneta ou desenhar!
