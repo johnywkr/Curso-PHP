@@ -1,0 +1,78 @@
+  
+  * ENTENDENDO CLASS E OBJETO *   
+
+- Um objeto só vai ser chamado se houver uma classe para instanciar esse objeto.  
+  
+  A instanciação é um processo por meio do qual se realiza a cópia de um objeto (classe) existente. Uma classe, a qual tem a função de determinar um tipo de dado,
+  deve ser instanciada para que possamos utilizá-la.
+
+
+  Exemplo: A class seria um molde , e o objeto um copia desse molde.
+	   Para criar uma caneta precisariamos de um projeto ou modelo , e outras canetas viriam a parir desse modelo. O modelo seria a class e as outras canetas o
+	   objeto a parti do modelo .
+
+  Obs: Sempre que for criar um arquivo class , comesse com a letra maiuscular como boa pratica.
+
+
+ * CARACTERISTICAS=>atributos E COMPORTAMENTOS=>metodos DA CLASS *
+
+ - Dentro da class serao criadas suas caracteristicas que na programação são chamadas de atributos.
+	ex : atributos da minha (class caneta).
+
+ - Tambem dentro da class teremos os comportamentos que na programacao são chamados de metodos, que são as funçoes ou FUNCTIONS.
+        ex : essa minha função pode tampar ou destampar minha caneta ou desenhar!
+
+
+ - Quando eu quiser referenciar uma variavel/metodo dentro ta minha class , usa se $this-> .
+	ex : 
+	   function tampar(){
+               $this->tampada = true;
+   	   }
+
+   * COMO INSTANCIAR UM OBJETO DA CLASS *
+
+ - A class seria requisitada atraves do require_once no index documento externo, que seria o codigo principal.
+	
+	ex : require_once 'Caneta.php';
+ 
+ - Logo depois devemos criar um novo objeto da class caneta .
+
+	ex : $c1 = new Caneta();
+
+	-> acima 'c1' seria o novo objeto, que esta recebendo uma nova caneta, uma copia da class caneta . new -> novo !
+	   toda vez que vemos um new , esta instaciando um novo objeto de acordo com a class dele.
+
+	- Depois para atribuir valores a minha nova caneta usamos os comandos abaixo!
+
+		$c1 = new Caneta();
+		$c1->cor = 'Azul';
+		$c1->fabricante = 'Faber Castel';
+		$c1->tampada = true;
+		$c1->ponta = '0.7';
+
+		print_r($c1);
+	
+		=> print_r vai mostra o resultado na tela , pode se usar o echo tambem.
+
+      - Para atribuir os metodos e do mesmo jeito do exemplo acima, só muda que ele vai trazer os valores de acordo com o que foi descrito nas funçoes!
+
+	Por exemplo se na minha função 'escrever' tiver uma condição que ,a caneta so pode escrever se ela estiver destampada , se nao , nao poderar escrever!
+	ai o print_r mostrar o resultado se for verdadeiro , escrevendo !
+
+	1º	ex :$c1->escrever()
+
+		print_r($c1);   O Print mostrara que nao poderar escrever pos no exemplo da aula a caneta  estar tampada.
+
+	2º  ex: $c1->destampar();
+		$c1->escrever()
+
+		print_r($c1);   Nesse caso poderar escrever pois antes chamamos o metodo destampar.
+
+	obs: O comando -> é para ver o que a class caneta tem para oferecer ao novo objeto '$c1' caneta: que são a cor, fabricante,tampada e ponta
+	e depois  atribuimos valores a eles . 
+
+
+  -RESUMINDO A ORIENTAÇÃO OBJETO-
+
+  -> Eu vou criar uma class e instaciar objetos a partir dessa class. Usamos o exemplo class caneta como mold e instanciamos um novo objeto caneta .
+	
