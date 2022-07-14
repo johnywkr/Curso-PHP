@@ -1,0 +1,3 @@
+	*Comandos e explicaçoes*
+
+   - Parametro : é uma variavel usada dentro função , para executar uma logica especifica .
