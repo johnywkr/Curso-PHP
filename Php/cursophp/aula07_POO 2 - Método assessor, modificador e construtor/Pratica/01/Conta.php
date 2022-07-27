@@ -46,4 +46,12 @@ class Conta{
     function setSaldo($valorSaldo){
         $this->saldo = $valorSaldo;
     }
+
+    function getTitular(){
+        return $this->titular;
+    }
+
+    function setTitular($t){
+        $this->titular = $t;
+    }
 }
