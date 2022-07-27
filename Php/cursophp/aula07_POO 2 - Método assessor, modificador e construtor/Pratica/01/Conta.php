@@ -2,13 +2,13 @@
 
 class Conta{    
     //Atributos da conta
-    public $titular;
+    private $titular;
     private $saldo;
-    public $tipo;
-    public $limite;
+    private $tipo;
+    private $limite;
     private $status;
 
-    //Metodos
+    //Metodos publicos
 
     function abrirConta(){
         $this->status = true;
@@ -35,5 +35,15 @@ class Conta{
             $this->saldo += $valorDeposito;
 
         }
+    }
+
+    //METODOS ESPECIAIS
+
+    function getSaldo (){
+        return $this->saldo;
+    }
+
+    function setSaldo($valorSaldo){
+        $this->saldo = $valorSaldo;
     }
 }

@@ -14,6 +14,24 @@ MAS O FOCO DESSA ANOTAÇÃO VAI SER O  " PRIVATE "   .
   Por padrão, é a visibilidade definida para métodos e atributos em uma classe.
 
 ex : Se tentar instanciar um objeto de uma class que tenha atributos privados , não sera possivel visualizalo atraves
-do print_r .
-     Só sera possivel dentro da class onde o atributo foi declarado, atraves dos metodos para alterar seus valores.
+do print_r . Vai aprecer um erro dizendo que a propriedade é privada.
+
+     Só sera possivel dentro da class onde o atributo foi declarado, atraves dos metodos 'ACESSORES E MODIFICADORES' para alterar seus valores.
      Então quando for instanciar um objeto , ai sim atraves do metodo chamado no lugar do atributo poderar ver seu valor privado. 
+
+
+  * METODOS ACESSORES E MODIFICADORES *
+
+    - get -> pegar
+    - set -> enviar OU atribuir
+
+  ->Agora com os metodos GET E SET será possivel criar funçoes onde poderemos alterar ou pegar valores de atributos 'PRIVADOS'.
+
+  EX: 
+   -> Esse comando abaixo não poderar ser executado pois o saldo é privado na sua class. Caso execute o comando sera mostrado um erro. ' erro propriedade é privada'. 
+       $c1->saldo = 1000;
+
+   -> Já esse comando abaixo tem como base uma função onde lhe permite alterar o valor do atributo privado atraves do 'set'.
+      $c1->setSaldo(1000);
+
+      Quando executar o print_r ser mostrado assim  [saldo:Conta:private] => 1000
