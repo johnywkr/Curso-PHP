@@ -17,13 +17,17 @@
  * CARACTERISTICAS=>atributos E COMPORTAMENTOS=>metodos DA CLASS *
 
  - Dentro da class serao criadas suas caracteristicas que na programação são chamadas de atributos.
-	ex : atributos da minha (class caneta).
+	ex :  Os atributos sao criados dentro das chaves , de pois de criado a class caneta!
+		class caneta {
+			public $status;
+		}
+	    
 
  - Tambem dentro da class teremos os comportamentos que na programacao são chamados de metodos, que são as funçoes ou FUNCTIONS.
         ex : essa minha função pode tampar ou destampar minha caneta ou desenhar!
 
 
- - Quando eu quiser referenciar uma variavel/metodo dentro ta minha class , usa se $this-> .
+ - Quando eu quiser referenciar uma variavel/atributo dentro ta minha class , usa se $this-> .
 	ex : 
 	   function tampar(){
                $this->tampada = true;

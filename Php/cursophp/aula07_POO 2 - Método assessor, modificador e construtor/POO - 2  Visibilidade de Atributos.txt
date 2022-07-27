@@ -1,0 +1,19 @@
+
+
+	* VISIBILIDADE DE ATRIBUTOS *
+
+EXISTEM 3 TIPOS DE VISIBILIDADE:
+
+PUBLIC -> Qualquer um pode acessar.
+PRIVATE-> Só pode ser alterado dentro da própria Classe.
+PROTECTED-> Apenas a mãe e suas filhas podem acessar.
+
+MAS O FOCO DESSA ANOTAÇÃO VAI SER O  " PRIVATE "   .
+
+- Private: Com este modificador, o acesso é permitido somente dentro da classe onde ele foi declarado.
+  Por padrão, é a visibilidade definida para métodos e atributos em uma classe.
+
+ex : Se tentar instanciar um objeto de uma class que tenha atributos privados , não sera possivel visualizalo atraves
+do print_r .
+     Só sera possivel dentro da class onde o atributo foi declarado, atraves dos metodos para alterar seus valores.
+     Então quando for instanciar um objeto , ai sim atraves do metodo chamado no lugar do atributo poderar ver seu valor privado. 
