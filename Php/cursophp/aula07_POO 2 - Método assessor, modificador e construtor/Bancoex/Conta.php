@@ -4,8 +4,8 @@ class Conta{
     //Atributos da conta
     public $titular;
     private $saldo;
-    public $tipo;
-    public $limite;
+   // public $tipo;
+   // public $limite;
     private $status;
 
     //Metodos

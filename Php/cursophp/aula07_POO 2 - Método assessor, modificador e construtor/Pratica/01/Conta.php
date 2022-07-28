@@ -19,9 +19,9 @@ class Conta{
     }
 
     function sacar($valorSaque){
-        if($this->status == false){
+        if($this->getStatus() == false){
            echo "Verifique o status da conta"; 
-        }else if($valorSaque > $this->saldo){
+        }else if($valorSaque > $this->getSaldo()){
             echo "Saldo insuficiente para saque";
         }else{
             $this->saldo -= $valorSaque;
@@ -29,11 +29,11 @@ class Conta{
     }
 
     function depositar($valorDeposito){
-        if($this->status == false){
+        if($this->getStatus() == false){
             echo "Verifique o status da conta";
         } else{
-            $this->saldo += $valorDeposito;
-
+            $this->setSaldo($this->getSaldo() - $valorDeposito);
+            //Meu setSaldoo ta enviando o valor do (getSaldo - valorDeposito) para tela.
         }
     }
 
@@ -47,11 +47,26 @@ class Conta{
         $this->saldo = $valorSaldo;
     }
 
-    function getTitular(){
+
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    
+
+    public function getTitular()
+    {
         return $this->titular;
     }
 
-    function setTitular($t){
-        $this->titular = $t;
+    public function setTitular($titular)
+    {
+        $this->titular = $titular;
     }
 }

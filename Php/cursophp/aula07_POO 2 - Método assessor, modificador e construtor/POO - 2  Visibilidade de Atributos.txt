@@ -35,3 +35,10 @@ do print_r . Vai aprecer um erro dizendo que a propriedade é privada.
       $c1->setSaldo(1000);
 
       Quando executar o print_r ser mostrado assim  [saldo:Conta:private] => 1000
+
+  OBSERVAÇÃO:
+    - Toda vez que eu for alterar atributos privados , tem que ser por meio dos GETs e SETs de cada atributo que nada mais é do que METODOS ESPECIAIS,
+    e em seguida chamar seus metodos/funções no lugar dos atributos privados, com o setFuncao ou getFuncao..
+
+    * O proprio vscold tem um extenção que te ajuda com isso , mas para praticar é bom fazer na mão de começo!
+      Entao antes de criar suas funçoes ja crie os GETS E SETS , para utilizarem em suas funções, como parte de boa pratica.
