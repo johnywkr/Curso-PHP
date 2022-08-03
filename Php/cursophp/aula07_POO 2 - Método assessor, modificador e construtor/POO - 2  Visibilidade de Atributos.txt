@@ -42,3 +42,7 @@ do print_r . Vai aprecer um erro dizendo que a propriedade é privada.
 
     * O proprio vscold tem um extenção que te ajuda com isso , mas para praticar é bom fazer na mão de começo!
       Entao antes de criar suas funçoes ja crie os GETS E SETS , para utilizarem em suas funções, como parte de boa pratica.
+
+
+  RESUMINDOO:
+     - Todo atributo privado precisa dos metodos especiais , sendo os gets e sets , para manipular os dados privados.

@@ -69,4 +69,25 @@ class Conta{
     {
         $this->titular = $titular;
     }
+
+
+    
+    public function getTipo(){
+        return $this->tipo;
+    }
+
+    public function setTipo($tipo){
+        $this->tipo = $tipo;
+    }
+
+
+
+    public function getLimite()
+    {
+        return $this->limite;
+    }
+
+    public function setLimite($limite){
+        $this->limite = $limite;
+    }
 }
