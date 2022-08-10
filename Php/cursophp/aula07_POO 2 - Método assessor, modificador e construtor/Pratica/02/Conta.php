@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-class Conta{    
+class Conta
+{
     //Atributos da conta
     private $titular;
     private $saldo;
@@ -10,40 +11,56 @@ class Conta{
 
     //Metodos publicos
 
-    function abrirConta(){
+    function abrirConta()
+    {
         $this->status = true;
     }
 
-    function fecharConta(){
+    function fecharConta()
+    {
         $this->status = false;
     }
 
-    function sacar($valorSaque){
-        if($this->getStatus() == false){
-           echo "Verifique o status da conta"; 
-        }else if($valorSaque > $this->getSaldo()){
+    function sacar($valorSaque)
+    {
+        if ($this->getStatus() == false) {
+            echo "Verifique o status da conta";
+        } else if ($valorSaque > $this->getSaldo()) {
             echo "Saldo insuficiente para saque";
-        }else{
-            $this->saldo -= $valorSaque;
+        } else {
+            $this->setSaldo($this->getSaldo() - $valorSaque);
         }
     }
 
-    function depositar($valorDeposito){
-        if($this->getStatus() == false){
+    function depositar($valorDeposito)
+    {
+        if ($this->getStatus() == false) {
             echo "Verifique o status da conta";
-        } else{
-            $this->setSaldo($this->getSaldo() - $valorDeposito);
+        } else {
+            $this->setSaldo($this->getSaldo() + $valorDeposito);
             //Meu setSaldoo ta enviando o valor do (getSaldo - valorDeposito) para tela.
+        }
+    }
+
+    function extrato()
+    {
+        $extrato = $this->getSaldo();
+        if ($extrato == 0) {
+            echo "saldo em conta: 0";
+        } else {
+            echo "saldo em conta R$$extrato";
         }
     }
 
     //METODOS ESPECIAIS
 
-    function getSaldo (){
+    function getSaldo()
+    {
         return $this->saldo;
     }
 
-    function setSaldo($valorSaldo){
+    function setSaldo($valorSaldo)
+    {
         $this->saldo = $valorSaldo;
     }
 
@@ -58,7 +75,7 @@ class Conta{
         $this->status = $status;
     }
 
-    
+
 
     public function getTitular()
     {
@@ -72,11 +89,13 @@ class Conta{
 
 
 
-    public function getTipo(){
+    public function getTipo()
+    {
         return $this->tipo;
     }
 
-    public function setTipo($tipo){
+    public function setTipo($tipo)
+    {
         $this->tipo = $tipo;
     }
 
@@ -87,14 +106,19 @@ class Conta{
         return $this->limite;
     }
 
-    public function setLimite($limite){
+    public function setLimite($limite)
+    {
         $this->limite = $limite;
     }
 
+
+
     //METODO ESPECIAL
-    function __construct($nome,$tipo){
+    function __construct($nome, $tipo)
+    {
         $this->setTitular($nome);
         $this->setTipo($tipo);
         $this->setLimite(100);
+        $this->setStatus(true);
     }
 }
