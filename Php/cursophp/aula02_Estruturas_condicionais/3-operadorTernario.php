@@ -1,3 +1,6 @@
+OPERADOR TERNARIO
+- serve para fazer extruturas condicionais simples.
+
 <?php
 
 

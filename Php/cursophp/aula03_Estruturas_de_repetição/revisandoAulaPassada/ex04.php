@@ -1,15 +1,12 @@
-
-
-
-    <?php 
+<?php 
 
 $numero1 = readline("Informe o numerador: ");
 $numero2 = readline("Informe o denominador: ");
 $operacao = readline("Qual operaçao deseja fazer: 
 + - Adiçao 
 - - Subtracao 
- x - Multiplicaçao 
- / - Divisao");
+x - Multiplicaçao 
+/ - Divisao");
 
 switch ($operacao) {
     case '+':

@@ -25,8 +25,8 @@
  */
  ?>
 
-Temos a palavra while, a abertura de parêntese, a condição nossa que é a variável $contador ser menor que 10, fechamento de parêntese, abertura de chave,
- e é este código que será repetido até que $contador seja menor que 10, e fechamento de chave.
+Temos a palavra while, a abertura de parêntese, a nossa condição é que a variável $contador ser menor que 10,
+fechamento de parêntese, abertura de chave, e é este código que será repetido até que $contador seja menor que 10, e fechamento de chave.
 
 O código echo é para ilustrar o avanço do contador. Já a linha $contador++; significa que estamos incrementando o contador,
  ou seja, somando 1 a cada vez que o laço fecha o ciclo.

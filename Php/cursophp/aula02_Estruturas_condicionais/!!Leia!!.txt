@@ -1,6 +1,23 @@
-	
+||  CONTEUDO DE:  " Estruturas condicionais "   ||
+________________________________________________________________________________________________________________
+-> Comandos utilizados nos exerciceos, e para que servem .
+
+1 - readline : serve para o usuario poder digitar o valor que a variavel ira receber.
+
+________________________________________________________________________________________________________________
+2 = um = recebe , dois == igualdade , tres === identico.
+
+________________________________________________________________________________________________________________
+3 - Operadores ternario -> ? interrogação : dois pontos.
 
 
-     ||  CONTEUDO DE:  " Estruturas condicionais "   ||
+Exemplo de como sera usado abaixo:
+-> $situação = $media >=6 ? "Aprovado" : "Reprovado";
 
-     -> Comandos utilizados nos exerciceos, e para que servem .
+Operador ternario serve para fazer extruturas condicionais simples.
+
+________________________________________________________________________________________________________________
+obs: Operações devem ser feitas entre parenteses 
+
+4 - 
+echo "\n"; Usado para passar para linha de baixo.
