@@ -1,3 +1,11 @@
 	*Comandos e explicaçoes*
 
    - Parametro : é uma variavel usada dentro função , para executar uma logica especifica .
+
+   - Operador ternario ?  : 
+
+	Ele funciona como um if. Ele testa uma condição (o primeiro operando), se ela for verdadeira,
+	o resultado da operação é o primeiro valor (após o ?, o segundo operando), se ela for falsa,
+	então o resultado é o segundo valor (depois do : , o terceiro operando).
+
+    Exemplo: de um operador ternario em um comando-> echo "Esta tocando: " , $this->getTocando() ? "Sim" : "Nao" , PHP_EOL;

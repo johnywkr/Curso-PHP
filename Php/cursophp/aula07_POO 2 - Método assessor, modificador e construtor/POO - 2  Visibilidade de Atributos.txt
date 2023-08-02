@@ -48,12 +48,15 @@ do print_r . Vai aprecer um erro dizendo que a propriedade é privada.
      - Todo atributo privado precisa dos metodos especiais , sendo eles os gets e sets , para manipular os dados privados.
 
 
-
+* METODO CONSTRUTOR *
  ### FUNÇÃO __construct  ###
  
  - Um construtor permite inicializar as propriedades de um objeto na criação do objeto.
 
-Se você criar uma __construct()função, o PHP chamará automaticamente essa função quando você criar um objeto de uma classe.
+Se você criar uma função __construct(), o PHP chamará automaticamente essa função quando você criar um objeto de uma classe.
+OBSERVAÇÃO: Vai aparecer um erro entre parentesses , porquer o new objeto esta esperando os paramentros criados dentro do metodo construtor.
+ 
+  Ex: Os paramentros seria o 'Apple' e 'red' em new fruit.
 
       EX:     class Fruit {
                 public $name;
@@ -71,9 +74,9 @@ Se você criar uma __construct()função, o PHP chamará automaticamente essa fu
                 }
               }
 
-              $apple = new Fruit("Apple", "red");
+              $apple = new Fruit("Apple", "red");   
               echo $apple->get_name();
               echo "<br>";
               echo $apple->get_color();
 
-  Portanto ao declarar uma new class, nâo
+  Portanto ao declarar uma new class, precisamos especificar os parametros.

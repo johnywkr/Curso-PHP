@@ -1,4 +1,6 @@
-  
+  * INTRODUÇÃO A POO (PROGRAMAÇÃO ORIENTADA A OBJETO)*
+  A Programação orientada a objeto tem como objetivo aproximar o maximo possivel da  vida real para o mundo digital.
+
   * ENTENDENDO CLASS E OBJETO *   
 
 - Um objeto só vai ser chamado se houver uma classe para instanciar esse objeto.  

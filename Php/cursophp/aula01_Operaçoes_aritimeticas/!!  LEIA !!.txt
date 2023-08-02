@@ -1,7 +1,8 @@
  
 
+Anotações..
 
+- var_dump -> imprime o tipo da variavel.
+- echo -> imprime o valor real da variavel.
 
-		!! OPERAÇOES ARITIMETICAS !!
-
-		  == AULAS E EXERCICEOS ==
+- readline -> permite que o usuario informe o numero da variavel.

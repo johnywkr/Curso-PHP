@@ -1,0 +1,10 @@
+version: "4.1"
+
+services:
+  php:
+    image: php:7.4.30-apache
+    container_name: serve-php
+    ports:
+      - "80:80"
+    volumes: 
+      - ./:/var/www/html

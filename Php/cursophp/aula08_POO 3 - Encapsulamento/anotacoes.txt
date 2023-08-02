@@ -1,12 +1,51 @@
 
-
-	Pilares da POO
+  -----------------------------------------------------------------------------------------------------------------------
+	* Pilares da POO *
 
   Para lembra quais os pilares da orientação objecto basta lembrar da frase -> É HP
 
 
-     É -> Encapsulamento : Algo que é encapsulado, dentro de uma capsula .. 
+     É -> Encapsulamento : Algo que é encapsulado, para poder funcionar  dentro de uma capsula .. ex: pilha .  
      H -> Herança : Vem de herdar algo .. 
      P -> Poliformismo : Varias formas de se fazer a mesma coisa ..
 
-    
+
+  --------------  O foco desse conteudo sera o 'ENCAPSULAMENTO' . --------------------------------------------------------
+
+  Encapsulamento
+
+    O significado de Encapsulamento , é garantir que os dados "sensíveis" estejam ocultos dos usuários. Para conseguir isso,
+    você deve declarar variáveis/atributos de classe como private(não pode ser acessado de fora da classe). Se você quiser
+    que outras pessoas leiam ou modifiquem o valor de um membro privado, você pode fornecer métodos get e set públicos.    
+
+
+   1 - Criaremos o index onde vai ser instanciado um novo objeto , caixa de som.
+   2 - class caixa de som.
+   3 - criar a interface .
+
+   Obs: Na interface todos os metodos seram abstratos , entao nao haverar codigos , só as chamadas para eles.
+
+
+   --- Abstração de Classes ¶ ----------------------------------------------------------------------------------------------
+
+
+   O PHP possui métodos e classes abstratas. Classes definidas como abstratas não podem ser instanciadas, e qualquer classe que contenha
+   ao menos um método abstrato também deve ser abstrata. Métodos são definidos como abstratos declarando a intenção em sua assinatura, 
+   e não podem definir a implementação.
+
+   Quando herdando de uma classe abstrata, todos os métodos marcados como abstratos da classe herdada precisam ser definidos na classe
+   implementante. além de seguir as regras usuais de herança e compatibilidade de assinatura.
+
+   fonte : https://www.php.net/manual/pt_BR/language.oop5.abstract.php
+
+
+
+        Na minha class CaixaDeSom eu vou implementar tudo que estar na minha interface controlador. A minha interface só vai funcionar se o que eu estiver
+        pedindo nela esteja como metodo ou atributo na minha class. Entao obrigatoriamente é preciso ter atributos e metodos.
+
+
+
+        O que é implements PHP?
+
+        A palavra-chave implements é usada para declarar que uma classe deve ter os métodos descritos na interface especificada . Isso é chamado de
+        polimorfismo. O polimorfismo facilita o uso de uma variedade de objetos diferentes da mesma maneira.

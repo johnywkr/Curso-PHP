@@ -9,5 +9,8 @@
     	Zip [24.92MB]
     	sha256: fd958c064e1ed18efe76298bb4606ab1abaca8400516f232b3e98ecbb3da6bc5
 
-  - Depois copie o caminho da pasta , entre na variavel de sistemas , add o caminho e teste dentro do prompt  de comando,
+  - Depois copie o caminho da pasta , entre na variavel de sistemas , add o caminho e teste dentro do prompt (CMD)  de comando,
     com o comando php -v . vai aparecer a versao e os detalhes se correr tudo certo.
+
+ - Agora clique no arquivo index com botão direto do mouse , e abra o arquivo com a opção o 'terminal integrado'.
+   Vai abrir uma janela abaixo no seu vscode e é só digitar -> php index.php , ou qualquer que seja o nome do seu arquivo.
