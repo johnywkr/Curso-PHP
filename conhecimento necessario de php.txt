@@ -1,0 +1,11 @@
+Conhecimento basico para entrar no mercado de trabalho com Php
+
+1° Logica de Programação..
+2° Saber o PHP puro para entender melhor, como funciona e fazer o crud.
+3° POO , programação orientada a objeto.
+4° MVC , estrutura usada..
+5° Laravel, fremework de php usado para agilizar o processo de programação.
+6° Crud com laravel.
+7° Altenticação.
+8° Integração , com git e outras coisa.
+9° API
