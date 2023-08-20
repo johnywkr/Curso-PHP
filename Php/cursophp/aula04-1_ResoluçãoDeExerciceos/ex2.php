@@ -28,9 +28,11 @@ while ($opcao != 3) {
             }
             readline("");
             break;
+
         case '3':
             popen('cls','w');               //limpa o que tiver na tela 
             break;    
+            
         default:
             echo "Digite uma opção valida.";
             readline("");
