@@ -3,4 +3,4 @@ PHP REVISAO DOS ESTUDOS
 1 - ok Operaçoes aritimeticas
 2 - ok Estruturas Condicionais 
 3 - ok Extruturas de repetição
-4 - ok treinando o que ja foi passado
+4 - ok Resolução de exerciceos treinando o que ja foi passado
