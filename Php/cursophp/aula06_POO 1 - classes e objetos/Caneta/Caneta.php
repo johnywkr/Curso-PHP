@@ -1,7 +1,7 @@
 <?php 
 
 class Caneta{
-    // Atributos da minha calss caneta. Atributos = caracteristicas
+    // Atributos da minha class caneta. Atributos = caracteristicas
     public $cor;
     public $fabricante;
     public $ponta;

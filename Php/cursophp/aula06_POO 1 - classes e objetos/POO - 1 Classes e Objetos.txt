@@ -1,4 +1,5 @@
   * INTRODUÇÃO A POO (PROGRAMAÇÃO ORIENTADA A OBJETO)*
+    
   A Programação orientada a objeto tem como objetivo aproximar o maximo possivel da  vida real para o mundo digital.
 
   * ENTENDENDO CLASS E OBJETO *   
@@ -13,19 +14,19 @@
 	   Para criar uma caneta precisariamos de um projeto ou modelo , e outras canetas viriam a parir desse modelo. O modelo seria a class e as outras canetas o
 	   objeto a parti do modelo .
 
-  Obs: Sempre que for criar um arquivo class , comesse com a letra maiuscula como boa pratica.
+  Obs: Sempre que for criar um arquivo class , comesse com a letra maiuscula, como boa pratica.
 
 
  * CARACTERISTICAS=>atributos E COMPORTAMENTOS=>metodos DA CLASS *
 
  - Dentro da class serao criadas suas caracteristicas que na programação são chamadas de atributos.
-	ex :  Os atributos sao criados dentro das chaves , de pois de criado a class caneta!
+	ex :  Os atributos sao criados dentro das chaves , depois de criado a class caneta!
 		class caneta {
 			public $status;
 		}
 	    
 
- - Tambem dentro da class teremos os comportamentos que na programacao são chamados de metodos, que são as funçoes ou FUNCTIONS.
+ - Tambem dentro da class teremos os comportamentos que na programacao são chamados de metodos, que são as funçoes "FUNCTIONS".
         ex : essa minha função pode tampar ou destampar minha caneta ou desenhar!
 
 
